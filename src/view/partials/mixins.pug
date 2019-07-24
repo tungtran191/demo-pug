@@ -1,0 +1,13 @@
+
+mixin hot-product(style,src)
+    .card(style=style)
+        img.card-img-top(src=src,alt="")
+
+mixin product(title,style,src)
+    .card(style=style)
+        img.card-img-top(src=src,alt="")
+        .card-body
+            h5.card-title.text-center= title
+            .card-text
+                if block
+                    block
